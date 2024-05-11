@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilory" , sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1634983799013-1ee608e7d499?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: 80% 40%;
+    background-size: cover;
+
+} 
+
+#overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.32)
+}
+#text {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    padding: 0px 10vw;
+    bottom: 20%;
+    color: white;
+}
+
+#text h1 {
+    font-size: 6vw;
+    font-weight: 500;
+}
+#textright {
+    width: 60%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#textright p{
+    font-size: 12px;
+    width: 40%;
+}
+#textright i {
+    color: white;
+}
+#bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    background-color: black;
+}
+
+#bone {
+    padding: 30px;
+    width: 20%;
+    min-height: inherit;
+    background-color: white;
+}
+#bone p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+#btwo {
+    width: 25%;
+    min-height: inherit;
+    background-color: white;
+    background-image: url(https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#bthree {
+    width: 25%;
+    min-height: inherit;
+    background-color: black;
+}
+#bthreetop {
+    width: 100%;
+    min-height: 20vh;
+    padding: 20px;
+    color: white;
+    background-color: rgba(239, 77, 17, 0.804);
+}
+#bthreetop p {
+    margin-top: 10px;
+    font-size: 10px;
+}
+#bthreebottom {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://images.unsplash.com/photo-1594897030264-ab7d87efc473?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#bfour {
+    width: 30%;
+    min-height: inherit;
+    padding: 30px;
+    background-color: #1e1d1d;
+    color: white;
+}
+
+.notf {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.notf #photo{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-image: url(https://images.unsplash.com/photo-1693250698665-52f7a27f3ce9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+   background-position: center;
+}
+.notf #photo2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1687788923700-07731a2027f6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.notf p {
+    width: 86%;
+    font-size: 12px;
+}
+
+@media(max-width: 500px) {
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h1 {
+        font-size: 10vw;
+    }
+    #bottom {
+        min-height: 20vh;
+    }
+    #overlay #text #textright {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright icons{
+        margin-top: 30px;
+    }
+    
+    #bottom {
+        flex-direction: column;
+    }
+    #bone {
+        width: 100%;
+        min-height: 40vh;
+    }
+    #btwo {
+        width: 100%;
+    }
+    #bthree {
+        flex-direction: column;
+        width: 100%;
+    }
+    #bthreebottom {
+        width: 40vh;
+    }
+    #bfour {
+        width: 100%;
+    }
+}
